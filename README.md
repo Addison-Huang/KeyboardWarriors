@@ -27,4 +27,4 @@ We try to compose a O(n) search algo.
 
 # <b> Conclusions </b>
 Our data determines that our matrixSearch algorithm runs in O(n) time. <br>
-The graph has a linear trend <br>
+Looking at the best fit line of a line graph of our data, our data appears to have a linear trend, confirming that our algorithm does run in linear time.<br>
