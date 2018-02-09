@@ -19,7 +19,7 @@ public class MFDriver{
 		int[][] test = ArrayMaker(length);
 		int x = 0;
 		long p = System.currentTimeMillis();
-		while (x < 100000) {
+		while (x < 10000) {
 		    MatrixFinder.matrixSearch(test,test[0][length-1]);
 		    x++;
 		}
