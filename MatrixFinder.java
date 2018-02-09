@@ -12,6 +12,9 @@
   if value not in matrix return (-1, -1)
 */
 
+package matrix;
+import java.util.*;
+
 public class MatrixFinder {
 
     public static String matrixSearch(int[][] array, int target) {

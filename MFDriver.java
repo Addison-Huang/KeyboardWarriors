@@ -1,4 +1,4 @@
-public class SearchTime{
+public class MFDriver{
     
      public static String matrixSearch(int[][] array, int target) {
 	int row = array.length -1 ; //bottom
@@ -27,7 +27,8 @@ public class SearchTime{
     }	
 
     public static void main(String[] args) {
-	for (int length = 1; length < 1000000; length++) {
+	System.out.println("n, time in ms");
+	for (int length = 100; length <= 10000; length+=100) {
 	    int[][] test = ArrayMaker(length);
 	    int x = 0;
 	    long p = System.currentTimeMillis();
@@ -37,7 +38,7 @@ public class SearchTime{
 	    }
 	    long q = System.currentTimeMillis();
 	    System.out.print(length + ",");
-	    System.out.println(q-p + ",");
+	    System.out.println(q-p);
 	}
 	
     }
