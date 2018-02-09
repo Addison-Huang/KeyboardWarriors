@@ -11,7 +11,8 @@ For an nxn matrix of ints, wherein
 *nums increase down a column
 Compose a O(n) search algo.
 
-# <b> Experiment Methodology </b> <br>1) Create a randomized matrix of size n*n <br>
+# <b> Experiment Methodology </b> <br>
+1) Create a randomized matrix of size n*n <br>
 2) Take current time <br> 
 3) Search for the value at the top right corner (0, n-1) 10^10 times <br>
 4) Take the time and find the difference in times <br>
