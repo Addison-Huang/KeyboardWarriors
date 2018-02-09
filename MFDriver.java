@@ -1,18 +1,4 @@
 public class MFDriver{
-    
-     public static String matrixSearch(int[][] array, int target) {
-	int row = array.length -1 ; //bottom
-	int column = 0; //left
-	while ((column < array[0].length) && (row >= 0)) { //check if the value is inside the boundary
-	    if ( array[row][column]  == target) //value == target
-		return "(" + row + "," + column + ")"; //return coordinates
-	    else if (array[row][column] > target) //value > target
-		row --; // move up
-	    else //value < target
-		column ++; //move right up
-	}
-	return "(-1,-1)"; //value not found in matrix
-    }
 
     public static int[][] ArrayMaker(int n) {
 	int[][] ret = new int [n][n];
@@ -27,20 +13,22 @@ public class MFDriver{
     }	
 
     public static void main(String[] args) {
-	System.out.println("n, time in ms");
-	for (int length = 100; length <= 10000; length+=100) {
-	    int[][] test = ArrayMaker(length);
-	    int x = 0;
-	    long p = System.currentTimeMillis();
-	    while (x < 10000) {
-		matrixSearch(test,test[0][length-1]);
-		x++;
+	System.out.println("Trial,n, Run Time(ms)");
+	for (int Trial= 0; Trial <= 10; Trial ++) {
+	    for (int length = 100; length <= 10000; length+=100) {
+		int[][] test = ArrayMaker(length);
+		int x = 0;
+		long p = System.currentTimeMillis();
+		while (x < 10000) {
+		    MatrixFinder.matrixSearch(test,test[0][length-1]);
+		    x++;
+		}
+		long q = System.currentTimeMillis();
+		System.out.print(length + ",");
+		System.out.println(q-p);
 	    }
-	    long q = System.currentTimeMillis();
-	    System.out.print(length + ",");
-	    System.out.println(q-p);
+	    Trial +=1;
 	}
-	
     }
 }
 
