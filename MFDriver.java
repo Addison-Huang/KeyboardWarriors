@@ -27,7 +27,7 @@ public class MFDriver{
 		System.out.print(Trial + "," + length + ",");
 		System.out.println(q-p);
 	    }
-	    Trial +=1;
+	    
 	}
     }
 }
