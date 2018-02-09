@@ -13,8 +13,7 @@ public class MFDriver{
     }	
 
     public static void main(String[] args) {
-	System.out.println("Trial,n, Run Time(ms)");
-	for (int Trial= 0; Trial <= 2; Trial ++) {
+	System.out.println("n, Run Time(ms)");
 	    for (int length = 100; length <= 10000; length+=100) {
 		int[][] test = ArrayMaker(length);
 		int x = 0;
@@ -24,11 +23,11 @@ public class MFDriver{
 		    x++;
 		}
 		long q = System.currentTimeMillis();
-		System.out.print(Trial + "," + length + ",");
+		System.out.print(length + ",");
 		System.out.println(q-p);
 	    }
 	    
-	}
+	
     }
 }
 
