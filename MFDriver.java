@@ -14,17 +14,17 @@ public class MFDriver{
 
     public static void main(String[] args) {
 	System.out.println("Trial,n, Run Time(ms)");
-	for (int Trial= 0; Trial <= 10; Trial ++) {
+	for (int Trial= 0; Trial <= 2; Trial ++) {
 	    for (int length = 100; length <= 10000; length+=100) {
 		int[][] test = ArrayMaker(length);
 		int x = 0;
 		long p = System.currentTimeMillis();
-		while (x < 10000) {
+		while (x < 100000) {
 		    MatrixFinder.matrixSearch(test,test[0][length-1]);
 		    x++;
 		}
 		long q = System.currentTimeMillis();
-		System.out.print(length + ",");
+		System.out.print(Trial + "," + length + ",");
 		System.out.println(q-p);
 	    }
 	    Trial +=1;
