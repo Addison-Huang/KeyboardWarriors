@@ -23,6 +23,7 @@ We try to compose a O(n) search algo.
 9) Determine the run time according to the graph <br>
 
 # <b> Results </b>
+<img src="Data.jpg" alt ="Our data"> 
 
 # <b> Conclusions </b>
 Our data determines that our matrixSearch algorithm runs in O(n) time. <br>
