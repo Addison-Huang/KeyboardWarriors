@@ -25,3 +25,5 @@ We try to compose a O(n) search algo.
 # <b> Results </b>
 
 # <b> Conclusions </b>
+Our data determines that our matrixSearch algorithm runs in O(n) time. <br>
+The graph has a linear trend <br>
